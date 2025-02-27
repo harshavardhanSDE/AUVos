@@ -19,17 +19,21 @@ import {
 const data = {
   navMain: [
     {
-      title: "Getting Started",
-      url: "#",
+      title: "Vehicle Configuration",
+      url: "/config",
       items: [
         {
-          title: "Installation",
-          url: "#",
+          title: "Actuators",
+          url: "/config/actuators",
         },
         {
-          title: "Project Structure",
-          url: "#",
+          title: "Sensors",
+          url: "/config/sensors",
         },
+        {
+          title: "ROS Nodes",
+          url: "/config/rosnodes"
+        }
       ],
     },
     {
@@ -168,7 +172,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                   <GalleryVerticalEnd className="size-4" />
                 </div>
                 <div className="flex flex-col gap-0.5 leading-none">
-                  <span className="font-medium">Documentation</span>
+                  <span className="font-medium">AutonomousOS</span>
                   <span className="">v1.0.0</span>
                 </div>
               </a>
